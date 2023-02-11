@@ -1,0 +1,103 @@
+.page_community {
+}
+.community {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%);
+}
+.community_container {
+}
+.community_header {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 442px;
+    margin-bottom: 64px;
+}
+.community_label {
+}
+.community_title {
+}
+.community_text {
+}
+
+.community_body {
+    display: grid;
+    grid-template-columns: repeat(2, 522px);
+    gap: 44px;
+}
+.community_item {
+    display: flex;
+    column-gap: 20px;
+    background: #FFFFFF;
+    box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+    border-radius: 14px;
+    overflow: hidden;
+    padding-top: 30px;
+    padding-right: 65px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+}
+.item_icon {
+}
+.item_content {
+    padding-top: 15px;
+}
+.item_title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 108.333333%; /* 26px/24 */
+    color: #2F2C4A;
+    margin-bottom: 14px;
+}
+.item_text {
+    line-height: 162.5%; /* 26px/16 */
+    color: #656464;
+}
+
+@media (max-width: 1120px) {
+    .community {
+        padding-bottom: 40px;
+    }
+    .community_body {
+        grid-template-columns: auto;
+        gap: 20px;
+    }
+}
+@media (max-width: 479.98px) {
+    .page_community {
+        padding-top: 0;
+    }
+    .community_header {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .community_label {
+        font-size: 14px;
+    }
+    .community_title {
+        font-size: 24px;
+    }
+    .community_text {
+        font-size: 14px;
+    }
+    .community_item {
+        flex-direction: column-reverse;
+        gap: 0;
+        padding-top: 10px;
+        padding-right: 15px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        text-align: center;
+        justify-content: center;
+    }
+    .item_title {
+        font-size: 18px;
+    }
+    .item_text {
+        font-size: 12px;
+    }
+    .item_icon img {
+        width: 30%;
+    }
+}

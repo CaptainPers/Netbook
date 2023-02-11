@@ -1,0 +1,196 @@
+.header {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    z-index: 50;
+    /* background-color: rgba(33, 123, 244, 0.5); */
+    border: 1px solid rgba(33, 123, 244, 0.1);
+}
+.header_container {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 1.875rem 0.3125rem;
+    max-height: 5.625rem;
+}
+.header_logo {
+    display: flex;
+    margin-right: 4.5rem;
+    position: relative;
+    z-index: 5;
+}
+.header_menu {
+    display: flex;
+    flex: 1 1 auto;
+}
+.menu {
+
+}
+.menu_body {
+    
+}
+.menu_list {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+    row-gap: 0.9375rem;
+}
+.menu_item {
+}
+.menu_link {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 100%; /* 14px/14 */
+    letter-spacing: 0.01em;
+    transition: all 0.5s ease 0s;
+}
+.menu_link:hover {
+    color: #000000;
+}
+.menu_icon {
+}
+.icon-menu {
+    display: none;
+}
+.icon_menu-line {
+}
+.header_form {
+    display: flex;
+    align-items: center;
+}
+.header_form-input {
+    display: flex;
+    align-items: center;
+    font-size: 0.75rem;
+    line-height: 116.666667%; /* 14px/12 */
+    text-align: center;
+    color: #686868;
+    width: 6.5625rem;
+    height: 2.25rem;
+    margin-right: 20px;
+    /* padding-bottom: 1.125rem; */
+    padding-left: 15px;
+    border-bottom: 1px solid #E5E5E5;
+    background: url(/img/header/search.svg) left 50% no-repeat;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: all 0.5s ease 0s;
+}
+.header_form-input.active {
+    transform: scaleY(1);
+}
+.header_button {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 116.666667%; /* 14px/12 */
+    text-align: center;
+    color: #fff;
+    padding: 1.0625rem 2.6875rem;
+    background-color: #217BF4;
+    box-shadow: 0px 7px 22px -6px rgba(33, 123, 244, 0.34);
+    border-radius: 14px;
+    border: 1px solid #217BF4;
+    transition: all 0.5s ease 0s;
+}
+.search_icon {
+    display: flex;
+    margin-right: 20px;
+    transform: scale(2);
+}
+.header_button:hover {
+    color: #217BF4;
+    background-color: #fff;
+}
+
+@media (max-width: 991.98px) {
+    .header_logo {
+        margin-right: 40px;
+    }
+    .menu_list {
+        column-gap: 1.5rem;
+    }
+}
+@media (max-width: 515px) {
+    .header_container {
+        flex-wrap: wrap;
+    }
+    .header_logo {
+        width: 2.1875rem;
+        overflow: hidden;
+    }
+    .header_form-input {
+        position: absolute;
+        top: 115%;
+        right: 0;
+        width: 15rem;
+        height: 2.25rem;
+    }
+}
+/*==============================BM=============================*/
+@media (max-width: 767.98px) {
+    .menu_body {
+        position: fixed;
+        width: 100%;height: 100%;
+        top: 0;
+        left: -100%;    /*central line hide onclick*/
+        transition: left 0.5s;
+        background-color: rgb(159, 201, 255);
+        padding: 6.25rem 0.9375rem 1.25rem 0.9375rem;
+        overflow: auto;     /*добавляем скролл в меню*/
+        z-index: 1;
+    }
+
+    .menu-open .menu_body {         /*включаем появление самого меню при нажатии*/
+        left: 0;
+    }
+    .menu_list {
+        flex-direction: column;
+        gap: 2.1875rem;
+    }
+    .menu_link {
+        font-size: 1.875rem;
+    }
+/*===================lines=================*/
+    .icon-menu {
+        display: block; /*включаем отображение меню*/
+        position: relative;
+        z-index: 5;
+        width: 1.875rem;
+        height: 1.125rem;
+    }
+    .icon_menu-line,        /*туто внимательно!*/
+    .icon-menu::before,     /*туто внимательно!*/
+    .icon-menu::after {     /*туто внимательно!*/
+        content: "";
+        position: absolute;
+        background-color: rgb(3, 3, 3);
+        height: 0.125rem;
+        width: 100%;
+        left: 0;
+        transition: all 0.5s;
+    }
+    .icon-menu::before {
+        top: 0;
+    }
+    .icon-menu::after {
+        bottom: 0;
+    }
+    .icon_menu-line {
+        top: calc(50% - 0.0625rem);
+    }
+    /*step 2 полосочки в крестик и средняя отъезжает*/
+    .menu-open .icon-menu::before {
+        top: calc(50% - 0.0625rem);
+        transform: rotate(-45deg);
+    }
+    .menu-open .icon-menu::after {
+        top: calc(50% - 0.0625rem);
+        transform: rotate(45deg);
+    }
+    .menu-open .icon_menu-line {
+        left: 50%;
+        width: 0;
+    }
+    /*=================================================================*/
+    
+}

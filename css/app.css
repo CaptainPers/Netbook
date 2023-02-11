@@ -1,0 +1,100 @@
+.page_app {
+}
+.app {
+    background: #E5F0FD;
+    overflow: hidden;
+}
+.app_container {
+    display: flex;
+    justify-content: space-between;
+}
+.app_header {
+    padding-top: 122px;
+    width: 351px;
+}
+.community_label {
+}
+.label {
+}
+.community_title {
+}
+.title {
+}
+.community_text {
+}
+.text {
+}
+.app_buttons {
+    margin-top: 36px;
+    display: flex;
+    column-gap: 20px;
+    row-gap: 20px;
+    align-items: center;
+}
+.appstore:hover,
+.playmarket:hover {
+    box-shadow: 0px 0px 22px rgba(178, 188, 208, 0.21);
+}
+
+.app_image {
+    padding-top: 98px;
+    margin-right: 79px;
+}
+.phone_image {
+    position: relative;
+    z-index: 5;
+}
+.phone_image img {    
+}
+.phone_image::after {
+    content: "";
+    position: absolute;
+    top: 241px;left: -45px;
+    width: 100%;height: 100%;
+    background: url(/img/app/orange.svg) 0 0 no-repeat;
+    z-index: -1;
+}
+.phone_image::before {
+    content: "";
+    position: absolute;
+    top: 380px;left: -45px;
+    width: 100%;height: 100%;
+    background: url(/img/app/green.svg) 0 0 no-repeat;
+    z-index: -1;
+}
+
+@media (max-width: 991.98px) {
+    .app_container {
+        flex-direction: column;
+    }
+    .app_header {
+        width: 100%;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .app_buttons {
+        justify-content: center;
+    }
+    .app_image {
+        text-align: center;
+        padding-top: 50px;
+        margin-right: 0;
+    }
+    .phone_image::after,
+    .phone_image::before {
+        display: none;
+    }
+}
+@media (max-width: 767.98px) {
+    .app_header {
+        padding-top: 50px;
+    }
+}
+@media (max-width: 479.98px) {
+    .app_header {
+        padding-top: 40px;
+    }
+    .phone_image img {   
+        width: 100%; 
+    }
+}

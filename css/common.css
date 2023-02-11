@@ -1,0 +1,39 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    color: #656464;
+    line-height: 1.625rem;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+[class*="_container"] {
+    max-width: 1200px;
+    padding: 0rem 0.9375rem;
+    margin: 0 auto;
+}
+main {
+    flex: 1 1 auto;
+}
+.label {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 100%; /* 18px/18 */
+    color: #217BF4;
+    margin-bottom: 0.625rem;
+}
+.title {
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 133.333333%; /* 48px/36 */
+    color: #0A093D;
+    margin-bottom: 1rem;
+}
+.text {
+    line-height: 175%; /* 28px/16 */
+    margin-bottom: 2.25rem;
+}

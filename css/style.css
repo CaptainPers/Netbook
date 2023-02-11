@@ -1,0 +1,21 @@
+@import url(/css/reset.css);
+/*Общие элементы, настройки*/
+@import url(/css/common.css);
+/*HEADER*/
+@import url(/css/header.css);
+/*MAIN*/
+@import url(/css/main.css);
+/*WHY*/
+@import url(/css/why.css);
+/*ACHIVEMENT*/
+@import url(/css/achivement.css);
+/*COMMUNITY*/
+@import url(/css/community.css);
+/*MEMBERS*/
+@import url(/css/members.css);
+/*app*/
+@import url(/css/app.css);
+/*NEWS*/
+@import url(/css/news.css);
+/*FOOTER*/
+@import url(/css/footer.css);

@@ -1,0 +1,140 @@
+.page_news {
+}
+.news {
+    margin-top: 96px;
+    margin-bottom: 34px;
+}
+.news_container {
+}
+.news_header {
+    text-align: center;
+    padding-top: 34px;
+    margin-bottom: 80px;
+}
+.community_label {
+}
+.label {
+}
+.community_title {
+}
+.title {
+}
+.news_body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 75px;
+}
+.news_item {
+}
+
+.news_item-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    padding-bottom: 97.058824%; /* 330/340 */
+    margin-bottom: 25px;
+}
+.news_item-image img {
+    position: absolute;
+    top: 0;left: 0;
+    height: 100%;width: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+.news_item-image img:hover {
+    transform: scale(1.1);
+}
+.news_item-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 160%;
+    color: #2F2C4A;
+    margin-bottom: 24px;
+    padding-left: 53px;
+    position: relative;
+}
+.news_item-title::before {
+    content: "";
+    position: absolute;
+    top: 15px;left: 0;
+    width: 39px;
+    height: 2px;
+    background: #FFAF2E;
+}
+.news_item-button {
+    padding-left: 53px;
+    color: #656464;
+    position: relative;
+    transition: all 0.5s;
+}
+.news_item-button::after {
+    content: "";
+    position: absolute;
+    top: 8px;left: 20px;
+    width: 100%;
+    height: 100%;
+    background: url(/img/news/ArrowRight.svg) right 0 no-repeat;
+}
+.news_item-button:hover {
+    color: #217BF4;
+}
+.news_item-button:hover::after {
+    background: url(/img/news/ArrowRightH.svg) right 0 no-repeat;
+}
+.item-1 {
+    position: relative;
+}
+.item-1::before {
+    content: "";
+    position: absolute;
+    bottom: 31px;right: 58px;
+    width: 100%;
+    height: 100%;
+    background: url(/img/news/decor.svg) 0 0 no-repeat;
+    z-index: -1;
+}
+.item-2 {
+}
+.item-3 {
+    position: relative;
+}
+.item-3::after {
+    content: "";
+    position: absolute;
+    top: 86px;left: 287px;
+    width: 100%;
+    height: 100%;
+    background: url(/img/news/decor.svg) 0 0 no-repeat;
+    z-index: -1;
+}
+
+@media (max-width: 1120px) {
+    .news_body {
+        gap: 20px;
+    }
+}
+@media (max-width: 991.98px) {
+    .news_body {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+}
+@media (max-width: 767.98px) {
+    .news {
+        margin-top: 35px;
+    }
+    .news_header {
+        margin-bottom: 45px;
+    }
+    .news_body {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media (max-width: 479.98px) {
+    .news {
+        margin-top: 15px;
+    }
+    .news_header {
+        margin-bottom: 45px;
+    }
+}

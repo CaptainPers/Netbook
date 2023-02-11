@@ -1,0 +1,199 @@
+.page_achivement {
+    padding: 5.25rem 0;
+    margin-bottom: 55px;
+}
+.achivement_container {
+    display: flex;
+    justify-content: space-between;
+}
+.achivement_body {
+    flex: 0 1 auto;
+    display: flex;
+    column-gap: 1.5rem;
+}
+.body_column {
+    flex: 0 1 50%;
+    width: 336px;
+    padding: 46px 18px 40px 44px;
+    border-radius: 14px;
+    border: 1px solid rgba(134, 134, 134, 0.1);
+    overflow: hidden;
+    transition: all 0.5s ease 0s;
+}
+.body_column:hover {
+    box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
+}
+.column_title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #0A093D;
+    padding-left: 36px;   
+}
+.column_title:not(:last-child) {
+    margin-bottom: 36px;
+}
+.title-1 {
+    position: relative;
+}
+.title-1::before {
+    content: "";
+    position: absolute;
+    top: 0;left: 0;
+    width: 22.75px;
+    height: 21.87px;
+    background: url(/img/achivement/Star.svg) 0 0 no-repeat;
+    background-size: 95%;
+}
+.title-2 {
+    position: relative;
+}
+.title-2::before {
+    content: "";
+    position: absolute;
+    top: 0;left: 0;
+    width: 22.75px;
+    height: 21.87px;
+    background: url(/img/achivement/Trophy.svg) 0 0 no-repeat;
+    background-size: 95%;
+}
+.column_awards {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 112.5%; /* 18px/16 */
+    color: #5D5B70;
+    margin-bottom: 43px;
+}
+.column_awards span {
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: #217BF4;
+}
+.awards-1 {
+    position: relative;
+    padding-left: 60px;
+}
+.awards-1::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: -11px;
+    width: 60px;
+    height: 24px;
+    background: url(/img/achivement/people.jpg) 0 0 no-repeat;
+    background-size: 100%;
+}
+.awards-2 {
+    position: relative;
+    padding-left: 40px;
+}
+.awards-2::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 60px;
+    height: 24px;
+    background: url(/img/achivement/aww.svg) 0 0 no-repeat;
+    /* background-size: 100%; */
+}
+.column_text {
+    line-height: 162.5%; /* 26px/16 */
+    color: #8C8C8C;
+    margin-bottom: 40px;
+}
+.column_button {
+    display: block;
+    font-weight: 500;
+    line-height: 100%; /* 16px/16 */
+    color: #4A4A56;
+    transition: all 0.5s ease 0s;
+}
+.column_button-1 {
+    background: url(/img/achivement/ArrowRight2.svg) 180px 5px no-repeat;
+}
+.column_button-1:hover {
+    color: #217BF4;
+    background: url(/img/achivement/ArrowRight.svg) 190px 5px no-repeat;
+}
+.column_button-2 {
+    background: url(/img/achivement/ArrowRight2.svg) 130px 5px no-repeat;
+}
+.column_button-2:hover {
+    color: #217BF4;
+    background: url(/img/achivement/ArrowRight.svg) 140px 5px no-repeat;
+}
+
+.achivement_content {
+    max-width: 381px;
+    padding-top: 9px;
+}
+.achivement_label {
+}
+.label {
+}
+.achivement_title {
+}
+.title {
+}
+.achivement_text {
+}
+.text {
+}
+.achivement_button {
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 100%; /* 14px/14 */
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    background: url(/img/achivement/button_arrow.svg) 125px 50% no-repeat #217BF4;
+    box-shadow: 0px 10px 22px rgba(33, 123, 244, 0.26);
+    border-radius: 14px;
+    border: 1px solid #217BF4;
+    padding-left: 38px;
+    width: 192px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease 0s;
+}
+.achivement_button:hover {
+    color: #217BF4;
+    background: url(/img/achivement/ArrowRight.svg) 140px 50% no-repeat #ffffff;
+}
+
+@media (max-width: 1120px) {
+    .achivement_container {
+        flex-direction: column-reverse;
+    }
+    .achivement_content {
+        max-width: none;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 767.98px) {
+    .page_achivement {
+        margin-bottom: 0;
+    }
+    .achivement_body {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .body_column {
+        width: 100%;
+    }
+}
+@media (max-width: 479.98px) {
+    .page_achivement {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .achivement_title {
+        font-size: 24px;
+    }
+    .achivement_text {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+}
